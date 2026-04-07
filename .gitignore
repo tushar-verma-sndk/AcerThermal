@@ -1,0 +1,9 @@
+env
+*__pycache__*
+*.pyc
+Results
+*.png
+build
+dist
+*.spec
+*.zip
