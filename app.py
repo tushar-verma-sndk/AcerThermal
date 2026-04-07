@@ -88,7 +88,7 @@ def on_submit_click():
 
         # ✅ Critical fix: resample requires DatetimeIndex
         needed_smart_temperature_data_resampled = (
-            needed_smart_temperature_data.resample("1S").mean().ffill()
+            needed_smart_temperature_data.resample("1s").mean().ffill()
         )
 
         # =========================

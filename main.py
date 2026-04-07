@@ -30,7 +30,7 @@ try:
     needed_smart_temperature_data.set_index('Time', inplace=True)
 
     # Resample needed_smart_temperature_data to match 1-second intervals (you can choose different aggregation methods if needed)
-    needed_smart_temperature_data_resampled = needed_smart_temperature_data.resample('1S').mean().ffill()
+    needed_smart_temperature_data_resampled = needed_smart_temperature_data.resample('1s').mean().ffill()
 
     # Merge the two DataFrames
     merged_data = needed_iometer_data.join(needed_smart_temperature_data_resampled, how='left')
